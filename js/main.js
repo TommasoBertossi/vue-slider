@@ -28,10 +28,12 @@ const slides = [
   createApp({
     data() {
       return {
-        goPrev() {
-            
-        }
-      }
-    }
+        activeSlide: 1,
+        slides,
+      };
+    },
+    created() {
+
+    },
   }).mount('#app')
     console.log(slides);
